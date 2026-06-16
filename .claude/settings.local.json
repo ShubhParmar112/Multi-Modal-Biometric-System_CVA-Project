@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find . -name \"__pycache__\" -type d -exec rm -rf {} +)",
+      "Bash(find . -name \".DS_Store\" -delete)",
+      "Bash(npm list *)",
+      "Bash(node make_doc.js)",
+      "Bash(npm root *)",
+      "Bash(NODE_PATH=/opt/homebrew/lib/node_modules node make_doc.js)",
+      "Bash(venv/bin/python -c \"import mediapipe; print\\(mediapipe.__version__\\)\")",
+      "Bash(venv/bin/python -c \"from mediapipe.tasks import python; from mediapipe.tasks.python import vision; print\\('tasks api ok'\\)\")",
+      "Bash(venv/bin/python -c ' *)"
+    ]
+  }
+}

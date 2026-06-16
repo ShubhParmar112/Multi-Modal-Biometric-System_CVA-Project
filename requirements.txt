@@ -1,0 +1,25 @@
+# Multi-Modal Biometric Authentication System
+# Core dependencies (Python 3.11+ compatible)
+
+# Computer Vision
+opencv-python>=4.9.0
+numpy>=1.26.0
+Pillow>=10.2.0
+
+# Face Recognition — InsightFace (ArcFace / buffalo_l)
+# Replaces face-recognition + dlib (128-d HOG/CNN → 512-d ArcFace)
+insightface>=0.7.3
+onnxruntime>=1.17.0          # CPU inference backend for InsightFace
+
+# Liveness Detection — MediaPipe Face Mesh
+# Replaces dlib 68-landmark model (6-point EAR → 478-landmark EAR)
+mediapipe>=0.10.0
+
+# Serial Communication (ESP32)
+pyserial>=3.5
+
+# UI
+customtkinter>=5.2.0
+
+# Utilities
+colorama>=0.4.6
