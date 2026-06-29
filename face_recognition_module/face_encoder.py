@@ -111,7 +111,7 @@ class FaceEncoder:
                         )]
 
                     # 512-d L2-normalised ArcFace embedding
-                    embedding = faces[0].embedding
+                    embedding = faces[0].normed_embedding
                     user_encodings.append(embedding)
                     all_encodings.append(embedding)
                     all_ids.append(user_id)

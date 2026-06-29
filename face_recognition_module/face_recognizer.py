@@ -113,7 +113,7 @@ class FaceRecognizer:
                    key=lambda f: (f.bbox[2] - f.bbox[0]) *
                                  (f.bbox[3] - f.bbox[1]))
 
-        probe = face.embedding  # 512-d, L2-normalised
+        probe = face.normed_embedding  # 512-d, L2-normalised
 
         # InsightFace bbox: [x1, y1, x2, y2] → (top, right, bottom, left)
         x1, y1, x2, y2 = face.bbox.astype(int)
